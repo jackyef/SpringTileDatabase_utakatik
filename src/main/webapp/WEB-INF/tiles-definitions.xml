@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ - Author   : Dynastymasra
+ - Name     : Dimas Ragil T
+ - Email    : dynastymasra@gmail.com
+ - LinkedIn : http://www.linkedin.com/in/dynastymasra
+ - Blogspot : dynastymasra.wordpress.com | dynastymasra.blogspot.com
+-->
+
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "/resources/tiles-config_3_0.dtd">
+        
+<tiles-definitions>
+    <definition name="home-tile" template="/WEB-INF/jsp/layout/template.jsp">
+        <put-attribute name="menu-template" value="/WEB-INF/jsp/menu/menu-home.jsp"/>
+        <put-attribute name="head-template" value="/WEB-INF/jsp/layout/header.jsp"/>
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/main.jsp"/>
+        <put-attribute name="footer-template" value="/WEB-INF/jsp/layout/footer.jsp"/>
+    </definition>
+    <definition name="mahasiswa-list-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/mahasiswa/list.jsp"/>
+    </definition>
+    <definition name="mahasiswa-data-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/mahasiswa/data.jsp"/>
+    </definition>
+    <definition name="mahasiswa-form-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/mahasiswa/form.jsp"/>
+    </definition>
+
+    <definition name="java-list-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/java/list.jsp"/>
+    </definition>
+    <definition name="java-data-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/java/data.jsp"/>
+    </definition>
+    <definition name="java-form-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/java/form.jsp"/>
+    </definition>
+
+    <definition name="database-list-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/database/list.jsp"/>
+    </definition>
+    <definition name="database-data-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/database/data.jsp"/>
+    </definition>
+    <definition name="database-form-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/database/form.jsp"/>
+    </definition>
+
+    <definition name="web-list-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/web/list.jsp"/>
+    </definition>
+    <definition name="web-data-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/web/data.jsp"/>
+    </definition>
+    <definition name="web-form-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/web/form.jsp"/>
+    </definition>
+
+    <definition name="linux-list-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/linux/list.jsp"/>
+    </definition>
+    <definition name="linux-data-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/linux/data.jsp"/>
+    </definition>
+    <definition name="linux-form-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/linux/form.jsp"/>
+    </definition>
+
+    <definition name="mulmed-list-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/multimedia/list.jsp"/>
+    </definition>
+    <definition name="mulmed-data-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/multimedia/data.jsp"/>
+    </definition>
+    <definition name="mulmed-form-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/multimedia/form.jsp"/>
+    </definition>
+    
+    <definition name="login-form-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/user/login.jsp"/>
+    </definition>
+    <definition name="home-inside-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/inside/home.jsp"/>
+    </definition>
+    <definition name="home-outside-tile" extends="home-tile">
+        <put-attribute name="main-template" value="/WEB-INF/jsp/content/multimedia/form.jsp"/>
+    </definition>
+</tiles-definitions>
